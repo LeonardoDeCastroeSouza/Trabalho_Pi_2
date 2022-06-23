@@ -1,0 +1,7 @@
+{
+  "name": "HouseHeroTabelas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
