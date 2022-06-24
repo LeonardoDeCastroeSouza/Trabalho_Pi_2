@@ -1,20 +1,37 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Lista de Jogadores
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" [(ngMode1)]="textoID" placeholder="Informe o ID"></ion-input>
+      <ion-input type="text" [(ngMode1)]="textoEmail" placeholder="Informe o nome"></ion-input>
+      <ion-input type="number" [(ngMode1)]="textoIdade" placeholder="Informe a idade"></ion-input>
+      <ion-input type="text" [(ngMode1)]="textoEndereco" placeholder="Informe o endereço"></ion-input>
+      <ion-input type="number" [(ngMode1)]="textoTelefone" placeholder="Informe o telefone"></ion-input>
+      <ion-button size="2" color="success"(click)="insert()">
+        <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let item of lista">
+      <ion-label>ID: {{item.ID}}</ion-label>
+      <ion-label>Nome: {{item.nome}}</ion-label>
+      <ion-label>Idade: {{item.idade}}</ion-label>
+      <ion-label>Endereco: {{item.endereco}}</ion-label>
+      <ion-label>Telefone: {{item.telefone}}</ion-label>
+      <ion-button color="danger" (click)="remove()">
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
 </ion-content>

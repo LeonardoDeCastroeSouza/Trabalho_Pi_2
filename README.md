@@ -1,2 +1,3 @@
-# Trabalho_Pi_2
-Repositorio para o trabalho de p.i
+O nosso projeto gira em torno de oferecer prestação de serviços em qualquer lugar, tendo como peça chave o conhecimento e a boa vontade de nossos cidadãos, gerando empregos "freelancer" no dia a dia, utilizando-se da necessidade de um montador de móveis, eletricista, mecânico, entre muitos outros.
+
+Usuários que acessarem o site ou o app terão acesso a prestadores de serviço dispostos a serem contratados pelo sistema para realizarem algum trabalho especializado diretamente para o usuário. A contratação e os detalhes do serviço são gerenciados pelo sistema e apresentados aos clientes, que são tanto os usuários quanto os trabalhadores que fizerem cadastro.
